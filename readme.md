@@ -1,21 +1,32 @@
 <h1 align="center">
-  <a href="https://github.com/ahmadawais/Emoji-Log"><img src="https://user-images.githubusercontent.com/960133/120058277-31849580-c063-11eb-80f7-d92ff54560d8.png" /></a>
+  <a href="https://github.com/codustry/Emoji-Prefix"><img src="https://user-images.githubusercontent.com/960133/120058277-31849580-c063-11eb-80f7-d92ff54560d8.png" /></a>
 
-`EMOJI-LOG`
+`EMOJI-PREFIX`
 
 </h1>
 
-After building [hundreds of open source software](https://github.com/ahmadawais) I've ended up inventing a git commit log standard called `EMOJI-LOG` that helps me understand a project's history with a less cognitive load just by looking at the git log.
+> An adaptation of [Emoji-Log](https://github.com/ahmadawais/Emoji-Log) by [Ahmad Awais](https://AhmadAwais.com/)
 
-[![emoji-log](https://cdn.rawgit.com/ahmadawais/stuff/ca97874/emoji-log/non-flat-round.svg)](./../../)
+After utilizing Emoji-Log for several years, I've decided to modify it to better align with my mental model.
 
-<br>
+## What's Different?
 
-![Philosophy](https://user-images.githubusercontent.com/960133/120058283-3ea18480-c063-11eb-8a62-8146227093fa.png)
+1. change from `‼️` to `⚠️` since it is not working on Windows well.
+2. remove the space between emoji and text `⚠️BREAK: remove function read_csv()`
+3. new wording, prefer verb, short form, dev friendly word and start with unique charactor.
+    1. 🌟ADD
+    2. 💡IMPROVE
+    3. 🐛FIX
+    4. �NOTE
+    5. 🤖TEST
+    6. ⚠️BREAK
+    7. 🚀RELEASE
 
-### PHILOSOPHY
+4. Develop an automated tool to facilitate this process.
 
-I like emoji. I like ’em a lot. Programming, code, geeks/nerds, open-source, all of that is inherently dull and sometimes boring. Emoji (which is, in fact, the plural of emoji) helps me add colors and emotions to the mix. Nothing wrong if you want to attach feelings to this 2D flat text-based world of code. I found out that instead of memorizing [hundreds of emoji](https://gitmoji.carloscuesta.me/) it's better to keep the categories small and general.
+## Philosophy
+
+A commit msg is a form of communication between devs(and him/herself). It conveys, group and stress what is happening.
 
 1. **IMPERATIVE** ↓
     - Make your Git commit messages imperative.
@@ -25,46 +36,49 @@ I like emoji. I like ’em a lot. Programming, code, geeks/nerds, open-source, a
 1. **RULES** ↓
     - A small number of categories — easy to memorize.
     - Nothing more nothing less.
-    - E.g. `📦 NEW`, `👌 IMPROVE`, `🐛 FIX`, `📖 DOC`, `🚀 RELEASE`, `🤖 TEST`, and `‼️ BREAKING`
+        1. 🌟ADD
+        2. 💡IMPROVE
+        3. 🐛FIX
+        4. 📝NOTE
+        5. 🤖TEST
+        6. ⚠️BREAK
+        7. 🚀RELEASE
+
 1. **ACTIONS** ↓
     - Make git commits based on the actions you take.
     - Use a good editor like [VSCode](https://code.visualstudio.com/) to commit the right files with commit messages.
-
-<br>
-
-![Start](https://user-images.githubusercontent.com/960133/120058297-4c570a00-c063-11eb-8458-0f61cf621169.png)
 
 ### GETTING STARTED
 
 Only use the following Git Commit Messages. A simple and small footprint is critical here.
 
-1. `📦 NEW: IMPERATIVE_MESSAGE_GOES_HERE`
+1. `🌟ADD: IMPERATIVE_MESSAGE_GOES_HERE`
     > Use when you add something entirely new.
-    > E.g. `📦 NEW: Add Git ignore file`
+    > E.g. `🌟ADD: Add Git ignore file`
 
-1. `👌 IMPROVE: IMPERATIVE_MESSAGE_GOES_HERE`
+1. `💡IMPROVE: IMPERATIVE_MESSAGE_GOES_HERE`
     > Use when you improve/enhance piece of code like refactoring etc.
-    > E.g. `👌 IMPROVE: Remote IP API Function`
+    > E.g. `💡IMPROVE: Remote IP API Function`
 
-1. `🐛 FIX: IMPERATIVE_MESSAGE_GOES_HERE`
+1. `🐛FIX: IMPERATIVE_MESSAGE_GOES_HERE`
     > Use when you fix a bug — need I say more?
-    > E.g. `🐛 FIX: Case conversion`
+    > E.g. `🐛FIX: Case conversion`
 
-1. `📖 DOC: IMPERATIVE_MESSAGE_GOES_HERE`
+1. `�NOTE: IMPERATIVE_MESSAGE_GOES_HERE`
     > Use when you add documentation like `README.md`, or even inline docs.
-    > E.g. `📖 DOC: API Interface Tutorial`
+    > E.g. `�NOTE: API Interface Tutorial`
 
-1. `🚀 RELEASE: IMPERATIVE_MESSAGE_GOES_HERE`
+1. `🚀RELEASE: IMPERATIVE_MESSAGE_GOES_HERE`
     > Use when you release a new version.
-    > E.g. `🚀 RELEASE: Version 2.0.0`
+    > E.g. `🚀RELEASE: Version 2.0.0`
 
-1. `🤖 TEST: IMPERATIVE_MESSAGE_GOES_HERE`
+1. `🤖TEST: IMPERATIVE_MESSAGE_GOES_HERE`
     > Use when it's related to testing.
-    > E.g. `🤖 TEST: Mock User Login/Logout`
+    > E.g. `🤖TEST: Mock User Login/Logout`
 
-1. `‼️ BREAKING: IMPERATIVE_MESSAGE_GOES_HERE`
+1. `⚠️BREAK: IMPERATIVE_MESSAGE_GOES_HERE`
     > Use when releasing a change that breaks previous versions.
-    > E.g. `‼️ BREAKING: Change authentication protocol`
+    > E.g. `⚠️BREAK: Change authentication protocol`
 
 _— That's it for now. Nothing more nothing less._
 
@@ -76,13 +90,13 @@ _— That's it for now. Nothing more nothing less._
 
 I'd like to share what each of these emojis mean.
 
-- `📦 NEW:` Emoji meaning: A "package emoji" — which can contain new stuff.
-- `👌 IMPROVE:` Emoji meaning: An "OK Hand emoji" — which is meant to appreciate an improvement.
-- `🐛 FIX:` Emoji meaning: A "bug emoji" — which means there was a bug that got fixed.
-- `📖 DOCS:` Emoji meaning: A "book emoji" — which means documentation or notes just like in a book.
-- `🚀 RELEASE:` Emoji meaning: A "rocket emoji" — which is meant to show a new release/launch.
-- `🤖 TEST:` Emoji meaning: A "robot emoji" — which says some test were run successfully.
-- `‼️ BREAKING:` Emoji meaning: A "bangbang emoji" — which attracts attention to a breaking change.
+- `🌟ADD:` Emoji meaning: A "package emoji" — which can contain new stuff.
+- `💡IMPROVE:` Emoji meaning: An "OK Hand emoji" — which is meant to appreciate an improvement.
+- `🐛FIX:` Emoji meaning: A "bug emoji" — which means there was a bug that got fixed.
+- `📝NOTE:` Emoji meaning: A "book emoji" — which means documentation or notes just like in a book.
+- `🚀RELEASE:` Emoji meaning: A "rocket emoji" — which is meant to show a new release/launch.
+- `🤖TEST:` Emoji meaning: A "robot emoji" — which says some test were run successfully.
+- `⚠️BREAK:` Emoji meaning: A "bangbang emoji" — which attracts attention to a breaking change.
 
 ##### VSCode Extension
 
@@ -103,48 +117,48 @@ gcap() {
 
 # NEW.
 gnew() {
-    gcap "📦 NEW: $@"
+    gcap "🌟ADD: $@"
 }
 
 # IMPROVE.
 gimp() {
-    gcap "👌 IMPROVE: $@"
+    gcap "💡IMPROVE: $@"
 }
 
 # FIX.
 gfix() {
-    gcap "🐛 FIX: $@"
+    gcap "🐛FIX: $@"
 }
 
 # RELEASE.
 grlz() {
-    gcap "🚀 RELEASE: $@"
+    gcap "🚀RELEASE: $@"
 }
 
 # DOC.
 gdoc() {
-    gcap "📖 DOC: $@"
+    gcap "📝NOTE: $@"
 }
 
 # TEST.
 gtst() {
-    gcap "🤖 TEST: $@"
+    gcap "🤖TEST: $@"
 }
 
 # BREAKING CHANGE.
 gbrk() {
-    gcap "‼️ BREAKING: $@"
+    gcap "⚠️BREAK: $@"
 }
 gtype() {
 NORMAL='\033[0;39m'
 GREEN='\033[0;32m'
-echo "$GREEN gnew$NORMAL — 📦 NEW
-$GREEN gimp$NORMAL — 👌 IMPROVE
-$GREEN gfix$NORMAL — 🐛 FIX
-$GREEN grlz$NORMAL — 🚀 RELEASE
-$GREEN gdoc$NORMAL — 📖 DOC
+echo "$GREEN gnew$NORMAL — 🌟ADD
+$GREEN gimp$NORMAL — 💡IMPROVE
+$GREEN gfix$NORMAL — 🐛FIX
+$GREEN grlz$NORMAL — 🚀RELEASE
+$GREEN gdoc$NORMAL — 📝NOTE
 $GREEN gtst$NORMAL — 🧪️ TEST
-$GREEN gbrk$NORMAL — ‼️ BREAKING"
+$GREEN gbrk$NORMAL — ⚠️BREAK"
 }
 ```
 
@@ -154,13 +168,13 @@ To install these functions for the fish shell, run the following commands:
 
 ```sh
 function gcap; git add .; and git commit -m "$argv"; and git push; end;
-function gnew; gcap "📦 NEW: $argv"; end
-function gimp; gcap "👌 IMPROVE: $argv"; end;
-function gfix; gcap "🐛 FIX: $argv"; end;
-function grlz; gcap "🚀 RELEASE: $argv"; end;
-function gdoc; gcap "📖 DOC: $argv"; end;
-function gtst; gcap "🤖 TEST: $argv"; end;
-function gbrk; gcap "‼️ BREAKING: $argv"; end;
+function gnew; gcap "🌟ADD: $argv"; end
+function gimp; gcap "💡IMPROVE: $argv"; end;
+function gfix; gcap "🐛FIX: $argv"; end;
+function grlz; gcap "🚀RELEASE: $argv"; end;
+function gdoc; gcap "📝NOTE: $argv"; end;
+function gtst; gcap "🤖TEST: $argv"; end;
+function gbrk; gcap "⚠️BREAK: $argv"; end;
 funcsave gcap
 funcsave gnew
 funcsave gimp
@@ -182,19 +196,19 @@ If you prefer, you can paste these aliases directly in your `~/.gitconfig` file:
   cap = "!f() { git add .; git commit -m \"$@\"; git push; }; f"
 
   # NEW.
-  new = "!f() { git cap \"📦 NEW: $@\"; }; f"
+  new = "!f() { git cap \"🌟ADD: $@\"; }; f"
   # IMPROVE.
-  imp = "!f() { git cap \"👌 IMPROVE: $@\"; }; f"
+  imp = "!f() { git cap \"💡IMPROVE: $@\"; }; f"
   # FIX.
-  fix = "!f() { git cap \"🐛 FIX: $@\"; }; f"
+  fix = "!f() { git cap \"🐛FIX: $@\"; }; f"
   # RELEASE.
-  rlz = "!f() { git cap \"🚀 RELEASE: $@\"; }; f"
+  rlz = "!f() { git cap \"🚀RELEASE: $@\"; }; f"
   # DOC.
-  doc = "!f() { git cap \"📖 DOC: $@\"; }; f"
+  doc = "!f() { git cap \"📝NOTE: $@\"; }; f"
   # TEST.
-  tst = "!f() { git cap \"🤖 TEST: $@\"; }; f"
+  tst = "!f() { git cap \"🤖TEST: $@\"; }; f"
   # BREAKING CHANGE.
-  brk = "!f() { git cap \"‼️ BREAKING: $@\"; }; f"
+  brk = "!f() { git cap \"⚠️BREAK: $@\"; }; f"
 ```
 
 <br>
@@ -230,13 +244,13 @@ This will give the following text expander keywords for the Emoji-Log:
 
 | Keyword |   Snippet    |
 | ------- | ------------ |
-| `;gnew` | 📦 NEW:      |
-| `;gimp` | 👌 IMPROVE:  |
-| `;gfix` | 🐛 FIX:      |
-| `;grlz` | 🚀 RELEASE:  |
-| `;gdoc` | 📖 DOC:      |
-| `;gtst` | 🤖 TEST:     |
-| `;gbrk` | ‼️ BREAKING:  |
+| `;gnew` | 🌟ADD:      |
+| `;gimp` | 💡IMPROVE:  |
+| `;gfix` | 🐛FIX:      |
+| `;grlz` | 🚀RELEASE:  |
+| `;gdoc` | 📝NOTE:      |
+| `;gtst` | 🤖TEST:     |
+| `;gbrk` | ⚠️BREAK:  |
 
 To edit the `;` prefix to your preferred expansion flag, double click right click the Emoji-Log Collection in _Alfred Settings » Features » Snippets_.
 
@@ -295,45 +309,3 @@ If your repo uses `EMOJI-LOG` then you can add any of the following badges to yo
 [![emoji-log](https://cdn.rawgit.com/ahmadawais/stuff/ca97874/emoji-log/non-flat-round.svg)](https://github.com/ahmadawais/Emoji-Log/)
 ```
 
-- **HTML** ↓
-
-```html
-<a href="https://github.com/ahmadawais/Emoji-Log/"><img alt="emoji-log" src="https://cdn.rawgit.com/ahmadawais/stuff/ca97874/emoji-log/non-flat-round.svg" /></a>
-```
-
-<br>
-
-[![👌](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/sponsor.png)](./../../)
-
-## Sponsor
-
-Me ([Ahmad Awais](https://twitter.com/mrahmadawais/)) and my incredible wife ([Maedah Batool](https://twitter.com/MaedahBatool/)) are two engineers who fell in love with open source and then with each other. You can read more [about me here](https://ahmadawais.com/about). If you or your company use any of my projects or like what I’m doing then consider backing me. I'm in this for the long run. An open-source developer advocate.
-
-- 🌟  **$9.99/month (recommended)** ❯ [Two cups of Caffè latte (coffee) every month →](https://pay.paddle.com/checkout/540217)
-- 🚀  **$99.99 (one-time sponsor)** ❯ [Support an hour of open-source code →](https://pay.paddle.com/checkout/515568)
-- 🔰  **$49.99 (one-time sponsor)** ❯ [Support an hour of maintenance →](https://pay.paddle.com/checkout/527253)
-- ☕️  **$9.99 (one-time sponsor)** ❯ [Lunch/coffee →](https://pay.paddle.com/checkout/527254)
-
-<br>
-
-[![📃](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/license.png)](./../../)
-
-## License & Conduct
-
-- MIT © [Ahmad Awais](https://twitter.com/MrAhmadAwais/)
-- [Code of Conduct](code-of-conduct.md)
-- [Munawar](https://munwr.com/) for making awesome badges
-
-<br>
-
-[![🙌](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/connect.png)](./../../)
-
-## Connect
-
-<div align="left">
-    <p><a href="https://github.com/ahmadawais"><img alt="GitHub @AhmadAwais" align="center" src="https://img.shields.io/badge/GITHUB-gray.svg?colorB=6cc644&style=flat" /></a>&nbsp;<small><strong>(follow)</strong> To stay up to date on free & open-source software</small></p>
-    <p><a href="https://twitter.com/MrAhmadAwais/"><img alt="Twitter @MrAhmadAwais" align="center" src="https://img.shields.io/badge/TWITTER-gray.svg?colorB=1da1f2&style=flat" /></a>&nbsp;<small><strong>(follow)</strong> To get #OneDevMinute daily hot tips & trolls</small></p>
-    <p><a href="https://www.youtube.com/AhmadAwais"><img alt="YouTube AhmadAwais" align="center" src="https://img.shields.io/badge/YOUTUBE-gray.svg?colorB=ff0000&style=flat" /></a>&nbsp;<small><strong>(subscribe)</strong> To tech talks & #OneDevMinute videos</small></p>
-    <p><a href="https://AhmadAwais.com/"><img alt="Blog: AhmadAwais.com" align="center" src="https://img.shields.io/badge/MY%20BLOG-gray.svg?colorB=4D2AFF&style=flat" /></a>&nbsp;<small><strong>(read)</strong> In-depth & long form technical articles</small></p>
-    <p><a href="https://www.linkedin.com/in/MrAhmadAwais/"><img alt="LinkedIn @MrAhmadAwais" align="center" src="https://img.shields.io/badge/LINKEDIN-gray.svg?colorB=0077b5&style=flat" /></a>&nbsp;<small><strong>(connect)</strong> On the LinkedIn profile y'all</small></p>
-</div>

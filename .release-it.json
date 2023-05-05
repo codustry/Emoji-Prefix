@@ -7,8 +7,8 @@
 	"beforeChangelogCommand": "auto-changelog",
 	"safeBump": false,
 	"src": {
-		"commitMessage": "🚀 RELEASE: %s",
-		"tagAnnotation": "🚀 RELEASE: %s"
+		"commitMessage": "🚀RELEASE: %s",
+		"tagAnnotation": "🚀RELEASE: %s"
 	},
 	"npm": {
 		"publish": true

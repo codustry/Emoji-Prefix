@@ -23,7 +23,7 @@
 			<key>modificationDate</key>
 			<date>2018-01-13T14:59:25Z</date>
 			<key>plainText</key>
-			<string>🐛 FIX: </string>
+			<string>🐛FIX: </string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>uuidString</key>
@@ -41,7 +41,7 @@
 			<key>modificationDate</key>
 			<date>2018-01-13T14:59:12Z</date>
 			<key>plainText</key>
-			<string>📦 NEW: </string>
+			<string>🌟ADD: </string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>uuidString</key>
@@ -59,7 +59,7 @@
 			<key>modificationDate</key>
 			<date>2018-01-13T14:59:04Z</date>
 			<key>plainText</key>
-			<string> 📖 DOC: </string>
+			<string> 📝NOTE: </string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>uuidString</key>
@@ -77,7 +77,7 @@
 			<key>modificationDate</key>
 			<date>2018-01-13T14:58:49Z</date>
 			<key>plainText</key>
-			<string>👌 IMPROVE: </string>
+			<string>💡IMPROVE: </string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>uuidString</key>
@@ -95,7 +95,7 @@
 			<key>modificationDate</key>
 			<date>2020-02-27T11:31:51Z</date>
 			<key>plainText</key>
-			<string>🚀 RELEASE: </string>
+			<string>🚀RELEASE: </string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>uuidString</key>
@@ -113,7 +113,7 @@
 			<key>modificationDate</key>
 			<date>2020-02-27T11:33:06Z</date>
 			<key>plainText</key>
-			<string>🤖 TEST: </string>
+			<string>🤖TEST: </string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>uuidString</key>
@@ -131,7 +131,7 @@
 			<key>modificationDate</key>
 			<date>2020-02-27T11:48:48Z</date>
 			<key>plainText</key>
-			<string>‼️ BREAKING: </string>
+			<string>⚠️BREAK: </string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>uuidString</key>
