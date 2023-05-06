@@ -17,7 +17,7 @@ After utilizing Emoji-Log for several years, I've decided to modify it to better
     1. 🌟ADD
     2. 💡IMPROVE
     3. 🐛FIX
-    4. �NOTE
+    4. 📝NOTE
     5. 🤖TEST
     6. ⚠️BREAK
     7. 🚀RELEASE
